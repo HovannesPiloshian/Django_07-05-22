@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fibonacci</h3>
+    <a href="{% url 'index' %}">Go Back</a>
+    <hr>
+    <form  method="post">
+        {% csrf_token %}
+        <p>
+            <input type="number" name="number" placeholder="Number1" id="">
+        </p>
+        <button type="submit" > Result</button>
+
+        <div>
+            <h4>Result = {{ res }}</h4>
+        </div>
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
